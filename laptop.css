@@ -1,0 +1,62 @@
+/* Base styles for laptop/desktop screens (961px and wider).
+   Color scheme: dark navy + teal + warm off-white, inspired by a complementary/near-complementary
+   technology palette. Document the exact Adobe Color scheme you choose in README. */
+:root {
+  --ink: #17243b;
+  --muted: #536176;
+  --paper: #f5f7fb;
+  --surface: #ffffff;
+  --teal: #087f8c;
+  --teal-dark: #075c68;
+  --coral: #f28c6b;
+  --line: #dce3ec;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); font-family: Arial, Helvetica, sans-serif; line-height: 1.65; }
+a { color: var(--teal-dark); }
+a:focus-visible, input:focus-visible, textarea:focus-visible, button:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+.site-header { padding: 1rem 7%; background: var(--surface); border-bottom: 1px solid var(--line); }
+.brand { display: inline-block; color: var(--ink); font-weight: 800; font-size: 1.6rem; text-decoration: none; letter-spacing: -1px; }
+.brand span { color: var(--teal); }
+.nav-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+.nav-list li { display: inline-block; margin: 0 1.2rem 0 0; }
+.nav-list a { text-decoration: none; font-weight: 700; padding: .4rem 0; }
+.nav-list a:hover, .nav-list a.current { color: var(--teal); border-bottom: 2px solid var(--coral); }
+main { width: 86%; max-width: 1160px; margin: 0 auto; min-height: 65vh; }
+.hero { margin: 2rem 0; padding: 5rem 5%; border-radius: 18px; background: linear-gradient(115deg, #17243b 0%, #087f8c 100%); color: white; }
+.hero h1 { max-width: 780px; font-size: 3.4rem; line-height: 1.12; margin: .5rem 0 1.2rem; }
+.hero h1 span { color: #ffb49b; }
+.eyebrow { color: var(--coral); font-size: .78rem; font-weight: 800; letter-spacing: .14em; }
+.hero .eyebrow { color: #b9f0f0; }
+.intro { max-width: 690px; font-size: 1.15rem; }
+.hero-actions { margin-top: 2rem; }
+.button { display: inline-block; padding: .8rem 1.25rem; border: 0; border-radius: 7px; background: var(--teal); color: white; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.hero .button { background: var(--coral); color: #17243b; }
+.text-link { margin-left: 1rem; color: white; font-weight: 700; }
+.section-block { padding: 1.5rem 0 3rem; }
+.section-block h2, .page-heading h1 { font-size: 2.3rem; margin: .2rem 0 .8rem; }
+.card-grid, .project-grid { font-size: 0; margin: 1.5rem -1%; }
+.info-card, .project-card { display: inline-block; vertical-align: top; width: 31.333%; margin: 1%; padding: 1.4rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; font-size: 1rem; }
+.info-card h3, .project-card h2 { margin-top: 0; }
+.page-heading { padding: 3rem 0 1rem; }
+.page-heading p { color: var(--muted); }
+.about-layout, .contact-layout { font-size: 0; margin: 1rem 0 3rem; }
+.profile-figure, .prose-card, .contact-copy, .contact-form { display: inline-block; vertical-align: top; font-size: 1rem; }
+.profile-figure { width: 34%; margin: 0; padding-right: 2rem; }
+.profile-photo { display: block; width: 100%; min-height: 280px; object-fit: cover; border-radius: 14px; background: #e3eaf1; }
+figcaption, .small-note { color: var(--muted); font-size: .88rem; }
+.prose-card { width: 66%; padding: 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.intro-video { display: block; width: 100%; max-width: 650px; background: #17243b; border-radius: 8px; }
+.project-card { width: 48%; min-height: 250px; }
+.project-number { color: var(--teal); font-weight: 800; font-size: .8rem; letter-spacing: .1em; }
+.tag-list { color: var(--teal-dark); font-size: .85rem; font-weight: 700; }
+.contact-copy { width: 38%; padding-right: 2rem; }
+.contact-form { width: 62%; padding: 1.5rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+.form-field { margin-bottom: 1rem; }
+.form-field label { display: block; margin-bottom: .35rem; font-weight: 700; }
+.form-field input, .form-field textarea { display: block; width: 100%; padding: .75rem; border: 1px solid #aebac9; border-radius: 6px; background: white; color: var(--ink); font: inherit; }
+.form-field textarea { resize: vertical; }
+.site-footer { margin-top: 3rem; padding: 1.5rem 7%; background: var(--ink); color: white; }
+.site-footer p { margin: .25rem 0; }
+.site-footer a { color: #b9f0f0; }

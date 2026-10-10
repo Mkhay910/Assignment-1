@@ -1,0 +1,14 @@
+/* Tablet viewport: 481px–960px. Keep cards in two columns and reduce large heading sizes. */
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  main { width: 90%; }
+  .site-header { padding-left: 5%; padding-right: 5%; }
+  .hero { padding: 3.5rem 5%; }
+  .hero h1 { font-size: 2.7rem; }
+  .info-card { width: 48%; }
+  .info-card:last-child { width: 98%; }
+  .project-card { width: 48%; }
+  .profile-figure { width: 38%; padding-right: 1.2rem; }
+  .prose-card { width: 62%; }
+  .contact-copy { width: 34%; padding-right: 1rem; }
+  .contact-form { width: 66%; }
+}
