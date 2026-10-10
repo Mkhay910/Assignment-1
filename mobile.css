@@ -1,9 +1,9 @@
 ```css
-/* Mobile viewport: 480px and narrower.
-   Stack content and make controls easy to tap. */
+/* Mobile screens: 480px and smaller */
 
 @media screen and (max-width: 480px) {
 
+    /* General page layout */
     body {
         font-size: 16px;
     }
@@ -13,18 +13,21 @@
         margin: 0 auto;
     }
 
+    /* Header and navigation */
     .site-header {
         padding: 15px 5%;
     }
 
     .nav-list li {
-        margin: 4px 12px 4px 0;
+        margin-right: 12px;
+        margin-bottom: 8px;
     }
 
     .nav-list a {
         font-size: 14px;
     }
 
+    /* Home page introduction */
     .hero {
         margin: 15px 0;
         padding: 30px 15px;
@@ -42,15 +45,20 @@
     .hero-actions .button,
     .hero-actions .text-link {
         display: block;
-        width: fit-content;
         margin: 12px 0;
     }
 
+    /* Section headings */
     .section-block h2,
     .page-heading h1 {
         font-size: 26px;
     }
 
+    .page-heading {
+        padding-top: 25px;
+    }
+
+    /* Information and project cards */
     .info-card,
     .info-card:last-child,
     .project-card {
@@ -58,63 +66,52 @@
         width: 100%;
         margin: 12px 0;
         min-height: 0;
-        box-sizing: border-box;
     }
 
-    .profile-figure,
-    .prose-card,
-    .contact-copy,
-    .contact-form {
+    /* About page layout */
+    .profile-figure {
         display: block;
         width: 100%;
-        box-sizing: border-box;
-    }
-
-    .profile-figure {
-        margin: 0 0 20px 0;
+        margin-bottom: 20px;
         padding: 0;
     }
 
     .profile-photo {
-        display: block;
         width: 100%;
         height: auto;
-        min-height: 0;
-        box-sizing: border-box;
-        object-fit: cover;
     }
 
-    .prose-card,
-    .contact-form {
+    .prose-card {
+        display: block;
+        width: 100%;
         padding: 16px;
     }
 
-    .contact-copy {
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .page-heading {
-        padding-top: 25px;
-    }
-
+    /* Introductory video */
     .intro-video {
-        display: block;
         width: 100%;
         height: auto;
     }
 
-    input,
-    select,
-    textarea,
-    button {
-        max-width: 100%;
-        box-sizing: border-box;
+    /* Contact page layout */
+    .contact-copy {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
     }
 
+    .contact-form {
+        display: block;
+        width: 100%;
+        padding: 16px;
+    }
+
+    /* Footer */
     .site-footer {
         padding: 20px 5%;
-        overflow-wrap: anywhere;
+        overflow-wrap: break-word;
     }
+
 }
 ```
